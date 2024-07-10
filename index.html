@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./assets/css/all.min.css" rel="stylesheet">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+
+<body class="position-relative" onload="getData()">
+    <div class="container-fluid position-absolute top-0 end-0 z-n1">
+        <div class="row">
+            <div class="col-12 g-0">
+                <video muted autoplay loop class="position-fixed top-0 end-0">
+                    <source src="./assets/video/wave-cafe-video-bg.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!--right section-start-->
+            <div class="col-lg-6 mt-5 order-2 order-lg-1">
+                <!--drink start-->
+                <div class="col-12 res-drink g-0">
+                    <nav class="w-100">
+                        <ul class="d-flex justify-content-between align-items-center flex-column flex-sm-row">
+                            <li class="list-unstyled mt-4" id="iceCoffe">
+                                <a class="text-decoration-none fs-4 fw-bold">آیس کافی</a>
+                            </li>
+                            <li class="list-unstyled mt-4" id="hotCoffe">
+                                <a class="text-decoration-none fs-4 fw-bold">هات کافی</a>
+                            </li>
+                            <li class="list-unstyled mt-4 mb-4 mb-sm-0" id="juice">
+                                <a class="text-decoration-none fs-4 fw-bold"> آبمیوه</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="row mt-4 res-iceCoffe">
+                        <div
+                            class="col-12 d-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
+                            <div class="col-sm-3">
+                                <img src="./assets/img/iced-americano.png">
+                            </div>
+                            <div
+                                class="col-sm-8 mt-4 mt-lg-0 p-3 d-flex justify-content-between align-items-center flex-wrap">
+                                <h4 class="text-white">آیس امریکنو</h4>
+                                <p class="main-color-2 fs-5">100000 تومان</p>
+                                <div class="col-12">
+                                    <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                        صنعت
+                                        چاپ، و با
+                                        استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 my-4 d-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
+                            <div class="col-sm-3">
+                                <img src="./assets/img/iced-cappuccino.png">
+                            </div>
+                            <div
+                                class="col-sm-8 mt-4 mt-lg-0 p-3 d-flex justify-content-between align-items-center flex-wrap">
+                                <h4 class="text-white">آیس کاپوچینو</h4>
+                                <p class="main-color-2 fs-5">100000 تومان</p>
+                                <div class="col-12">
+                                    <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                        صنعت
+                                        چاپ، و با
+                                        استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 d-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
+                            <div class="col-sm-3">
+                                <img src="./assets/img/iced-espresso.png">
+                            </div>
+                            <div
+                                class="col-sm-8 mt-4 mt-lg-0 p-3 d-flex justify-content-between align-items-center flex-wrap">
+                                <h4 class="text-white">آیس اسپرسو</h4>
+                                <p class="main-color-2 fs-5">100000 تومان</p>
+                                <div class="col-12">
+                                    <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                        صنعت
+                                        چاپ، و با
+                                        استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 my-4 d-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
+                            <div class="col-sm-3">
+                                <img src="./assets/img/iced-latte.png">
+                            </div>
+                            <div
+                                class="col-sm-8 mt-4 mt-lg-0 p-3 d-flex justify-content-between align-items-center flex-wrap">
+                                <h4 class="text-white">آیس لته</h4>
+                                <p class="main-color-2 fs-5">100000 تومان</p>
+                                <div class="col-12">
+                                    <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                        صنعت
+                                        چاپ، و با
+                                        استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-4 res-hotCoffe">
+                        <div
+                            class="col-12 d-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
+                            <div class="col-sm-3">
+                                <img src="./assets/img/hot-americano.png">
+                            </div>
+                            <div
+                                class="col-sm-8 mt-4 mt-lg-0 p-3 d-flex justify-content-between align-items-center flex-wrap">
+                                <h4 class="text-white">هات امریکنو</h4>
+                                <p class="main-color-2 fs-5">100000 تومان</p>
+                                <div class="col-12">
+                                    <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                        صنعت
+                                        چاپ، و با
+                                        استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 my-4 d-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
+                            <div class="col-sm-3">
+                                <img src="./assets/img/hot-cappuccino.png">
+                            </div>
+                            <div
+                                class="col-sm-8 mt-4 mt-lg-0 p-3 d-flex justify-content-between align-items-center flex-wrap">
+                                <h4 class="text-white">هات کاپوچینو</h4>
+                                <p class="main-color-2 fs-5">100000 تومان</p>
+                                <div class="col-12">
+                                    <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                        صنعت
+                                        چاپ، و با
+                                        استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 d-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
+                            <div class="col-sm-3">
+                                <img src="./assets/img/hot-espresso.png">
+                            </div>
+                            <div
+                                class="col-sm-8 mt-4 mt-lg-0 p-3 d-flex justify-content-between align-items-center flex-wrap">
+                                <h4 class="text-white">هات اسپرسو</h4>
+                                <p class="main-color-2 fs-5">100000 تومان</p>
+                                <div class="col-12">
+                                    <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                        صنعت
+                                        چاپ، و با
+                                        استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 my-4 d-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
+                            <div class="col-sm-3">
+                                <img src="./assets/img/hot-latte.png">
+                            </div>
+                            <div
+                                class="col-sm-8 mt-4 mt-lg-0 p-3 d-flex justify-content-between align-items-center flex-wrap">
+                                <h4 class="text-white">هات لته</h4>
+                                <p class="main-color-2 fs-5">100000 تومان</p>
+                                <div class="col-12">
+                                    <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                        صنعت
+                                        چاپ، و با
+                                        استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row mt-4 res-juice">
+                        <div
+                            class="col-12 d-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
+                            <div class="col-sm-3">
+                                <img src="./assets/img/smoothie-1.png">
+                            </div>
+                            <div
+                                class="col-sm-8 mt-4 mt-lg-0 p-3 d-flex justify-content-between align-items-center flex-wrap">
+                                <h4 class="text-white"> اسموتی توت فرنگی</h4>
+                                <p class="main-color-2 fs-5">100000 تومان</p>
+                                <div class="col-12">
+                                    <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                        صنعت
+                                        چاپ، و با
+                                        استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 my-4 d-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
+                            <div class="col-sm-3">
+                                <img src="./assets/img/smoothie-2.png">
+                            </div>
+                            <div
+                                class="col-sm-8 mt-4 mt-lg-0 p-3 d-flex justify-content-between align-items-center flex-wrap">
+                                <h4 class="text-white">اسموتی تمشک</h4>
+                                <p class="main-color-2 fs-5">100000 تومان</p>
+                                <div class="col-12">
+                                    <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                        صنعت
+                                        چاپ، و با
+                                        استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 d-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
+                            <div class="col-sm-3">
+                                <img src="./assets/img/smoothie-3.png">
+                            </div>
+                            <div
+                                class="col-sm-8 mt-4 mt-lg-0 p-3 d-flex justify-content-between align-items-center flex-wrap">
+                                <h4 class="text-white">اسموتی آناناس</h4>
+                                <p class="main-color-2 fs-5">100000 تومان</p>
+                                <div class="col-12">
+                                    <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                        صنعت
+                                        چاپ، و با
+                                        استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 my-4 d-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
+                            <div class="col-sm-3">
+                                <img src="./assets/img/smoothie-4.png">
+                            </div>
+                            <div
+                                class="col-sm-8 mt-4 mt-lg-0 p-3 d-flex justify-content-between align-items-center flex-wrap">
+                                <h4 class="text-white">اسموتی اسفناج</h4>
+                                <p class="main-color-2 fs-5">100000 تومان</p>
+                                <div class="col-12">
+                                    <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                        صنعت
+                                        چاپ، و با
+                                        استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--drink end-->
+                <!--aboutUs start-->
+                <div class="col-12 res-aboutUS g-0">
+                    <div class="col-12 d-flex justify-content-between align-items-center p-4 flex-wrap">
+                        <div class="col-lg-12">
+                            <h3 class="main-color-2 me-0 me-lg-5 pe-0 pe-lg-5 text-center">درباره کافه لورم</h3>
+                        </div>
+                        <div class="col-lg-4 p-0 my-3">
+
+
+                            <img src="./assets/img/about-1.png">
+
+                        </div>
+
+                        <div class="col-lg-7">
+                            <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                                و با
+                                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                            <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،</p>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-between align-items-center flex-wrap p-4 my-4">
+                        <div class="col-lg-7">
+                            <h3 class="main-color-2"> چطور شروع کردیم؟ </h3>
+                            <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                                و با
+                                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                        </div>
+                        <div class="col-lg-4 p-0">
+                            <img src="./assets/img/about-2.png">
+                        </div>
+                        <div class="col-lg-12 mt-2">
+                            <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                                و با
+                                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                        </div>
+                    </div>
+                </div>
+                <!--aboutUs end-->
+                <!--special items start-->
+                <div class="col-12 res-specialItems g-0">
+                    <div class="col-md-5 col-lg-7 float-start mb-4 mb-sm-0 mb-lg-4">
+                        <img src="./assets/img/special-01.jpg" class="w-100 img-fluid object-fit-contain">
+                        <div class="col-12 p-3">
+                            <h3 class="main-color-2 my-3"> آیتم ویژه اول </h3>
+                            <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                                و با
+                                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-5 col-lg-7 float-start ms-0 ms-md-4 ms-lg-0">
+                        <img src="./assets/img/special-02.jpg" class="w-100 img-fluid object-fit-contain">
+                        <div class="col-12 p-3">
+                            <h3 class="main-color-2 my-3"> آیتم ویژه دوم </h3>
+                            <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                                و با
+                                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-5 col-lg-7 float-start mt-4">
+                        <img src="./assets/img/special-03.jpg" class="w-100 img-fluid object-fit-contain">
+                        <div class="col-12 p-3">
+                            <h3 class="main-color-2 my-3"> آیتم ویژه سوم </h3>
+                            <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                                و با
+                                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-5 col-lg-7 float-start mt-4 ms-0 ms-md-4 ms-lg-0">
+                        <img src="./assets/img/special-04.jpg" class="w-100 img-fluid object-fit-contain">
+                        <div class="col-12 p-3">
+                            <h3 class="main-color-2 my-3"> آیتم ویژه چهارم </h3>
+                            <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                                و با
+                                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-5 col-lg-7 float-start my-4">
+                        <img src="./assets/img/special-05.jpg" class="w-100 img-fluid object-fit-contain">
+                        <div class="col-12 p-3">
+                            <h3 class="main-color-2 my-3"> آیتم ویژه پنجم </h3>
+                            <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                                و با
+                                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-5 col-lg-7 float-start mt-sm-4 mt-lg-0 mb-4 mb-sm-0 ms-0 ms-md-4 ms-lg-0">
+                        <img src="./assets/img/special-06.jpg" class="w-100 img-fluid object-fit-contain">
+                        <div class="col-12 p-3">
+                            <h3 class="main-color-2 my-3"> آیتم ویژه ششم </h3>
+                            <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                                و با
+                                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!--special items end-->
+                <!--contact us start-->
+                <div class="col-12 res-contactUs g-0">
+                    <div class="col-12 p-3">
+                        <h3 class="main-color-2">تماس با ما</h3>
+                        <p class="text-white f-14 lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                            روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                    </div>
+                    <div class="col-lg-10 p-5 my-4">
+                        <form action="reg.php" onsubmit="return validateForm()" method="post">
+                            <div id="userError" class="text-white"></div>
+                            <input
+                                class="form-control bg-transparent border-top-0 border-end-0 border-start-0 rounded-0 text-white"
+                                type="text" placeholder="نام" required id="userName" onkeyup="validateForm()">
+
+                            <div id="emailError" class="text-white"></div>
+                            <input
+                                class="form-control bg-transparent my-4 border-top-0 border-end-0 border-start-0 rounded-0 text-white"
+                                type="email" placeholder="ایمیل" required id="email" onkeyup="validateForm()">
+
+                            <textarea
+                                class="form-control bg-transparent border-top-0 border-end-0 border-start-0 rounded-0 text-white"
+                                placeholder="توضیحات"></textarea>
+
+                            <button type="submit" class="btn btn-light mt-4 rounded-0 px-4 border-0"
+                                id="reg-btn">ارسال</button>
+                        </form>
+
+                    </div>
+                </div>
+                <!--contact us end-->
+
+            </div>
+
+
+            <!--right section-end-->
+            <!--left section-start-->
+            <div class="col-lg-5 mt-5 order-1 order-lg-2" id="nav-left">
+                <div class="col-lg-10 bg-white p-5 d-flex justify-content-evenly align-items-center">
+                    <i class="fa-solid fa-coffee fa-3x main-color-1"></i>
+                    <h1 class="main-color-1">کافه لورم</h1>
+                </div>
+                <div class="row nav-main">
+                    <ul class="col-lg-10 d-flex justify-content-between flex-wrap">
+                        <li class="list-unstyled col-lg-5 text-center mt-4 py-4 px-2" id="aboutUs">
+
+                            <a href="#" class="text-decoration-none"><i
+                                    class="fa-solid fa-user-group fa-2x p-1"></i>درباره ما</a>
+                        </li>
+                        <li class="list-unstyled col-lg-5 text-center mt-4 px-2 py-4" id="drinks">
+
+                            <a href="#" class="text-decoration-none"><i
+                                    class="fa-solid fa-glass-water fa-2x p-1"></i>نوشیدنی ها</a>
+                        </li>
+                        <li class="list-unstyled col-lg-5 text-center px-2 py-4 mt-4" id="contactUs">
+
+                            <a href="#" class="text-decoration-none"><i class="fa-solid fa-comment fa-2x p-1"></i>تماس
+                                با ما</a>
+                        </li>
+                        <li class="list-unstyled col-lg-5 text-center px-2 py-4 mt-4" id="specialItems">
+
+                            <a href="#" class="text-decoration-none"><i
+                                    class="fa-solid fa-martini-glass-citrus fa-2x p-1"></i>آیتم‌های ویژه</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!--left section-end-->
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 mt-auto mb-5" id="copyRight">
+                <p class="text-white text-center mt-3">Copyright 2020 Wave Cafe | Design: Tooplate</p>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+
+</body>
+
+</html>
